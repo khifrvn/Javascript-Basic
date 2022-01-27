@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript</title>
+	<!-- Box Chat -->
+</head>
+<body>
+	<!-- box chat can use on 3 ways 
+			- alert()
+			- confirm()
+			- promp()
+	-->
+
+	<!-- Dialog Alert -->
+	<script>
+	alert("Hello guys, this dialog alert");
+	</script>
+
+	<button onclick="alert('Thanks for click')">Click Me</button>
+
+	<!-- Dialog Confirm -->
+	<script>
+	var sure = confirm('u want visit ig?');
+
+	if (sure) {
+		window.location = "https://www.instagram.com"
+	} else {
+		document.writeln('Oke, stay here!')
+	}
+	</script>
+
+	<!-- Dialog Prompt -->
+	<script>
+	// prompt() is for input from user
+	var name = prompt("Whats ur name?", "");
+	document.write("<p><br>Welcome, " + name + "</p>");
+	</script>
+	
+</body>
+</html>
