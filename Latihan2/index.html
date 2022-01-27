@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript</title>
+</head>
+<body>
+	<!--	
+	javascript console.__, log(), debug(), info(), error(), dir().
+	-
+	Fungsi alert untuk menampilkan jendela dialog. 
+
+	-->
+	<!-- Alert in javascript -->
+	<button onclick="alert('Hello World!')">Alert on javascript</button>
+	<script>
+	alert('Hellow World!');
+	</script>
+
+	<!-- Alert with function -->
+	<button onclick="myButton()">Clickme</button>
+	<script>
+		function myButton(){
+			alert('Hello Guys!');
+		}
+	</script>
+
+	<!-- Document Write -->
+	<script>
+	document.write("write on javascript\n");
+	document.write("Hello everyone");
+	</script>
+
+	<!-- Inner HTML -->
+
+	<div id="hello"></div>
+	<script>
+	// Make element object
+	var hasil = document.getElementById('hello');
+	// show true element
+	hasil.innerHTML = "<p>Write with inner html on js</p>";
+	</script>
+</body>
+</html>
