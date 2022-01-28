@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript</title>
+</head>
+<body>
+	<!-- Function on Javascript -->
+
+	<a href="#" onclick="hello()">Click Me</a>
+
+	<script>
+	// 4 ways make function on js
+	
+	// normal way
+	function name(){
+		console.log("hello")
+	}
+
+	// with expression
+	var names = function(){
+		console.log("James")
+	}
+
+	// with arrow
+	var nameFunction = () => {
+		console.log("Hello")
+	}
+	// or
+	var nameFunction = () => console.log("Hello");
+
+	// with constructor (not recomended)
+	/*
+	var nameFunction = new function ('console.log("Hello");');
+	*/
+
+	let hello = () => alert("Hello");
+
+	// Function with parameter
+	function kali(a, b){
+		hasil = a * b;
+		alert("Hasil a*b = " + hasil)
+	}
+
+	kali(4, 3);
+
+	</script>	
+	
+</body>
+</html>
