@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript</title>
+</head>
+<body>
+	<!-- Object  on Javascript -->
+	<script>
+	//  example
+	var car = {
+		type:"Toyota Corolla",
+		model:"1.6 D",
+		color:"Green"
+
+		// method
+		start: function(){
+			console.log("ini method start");
+		},
+
+		drive: function(){
+			console.log("ini method drive");
+		},
+
+		brake: function(){
+			console.log("ini method brake");
+		},
+
+		stop: function(){
+			console.log("ini method stop");
+		}
+	};
+
+	console.log(car.type);
+	console.log(car.color);
+
+	car.start();
+	car.stop();
+	</script>
+
+	<script>
+	var person = {
+		name:"John",
+		age:"20",
+
+		showName: function(){
+			alert(`Name: ${this.name}`);
+		}
+	};
+
+	person.showName();
+	</script>
+
+	<script>
+	function Person(firstName, lastName){
+		//properti
+		this.firstName = firstName;
+		this.lastName = lastName;
+
+		//method
+		this.fullName = function(){
+			return `${this.firstName} ${this.lastName}`
+		}
+		this.showName = function(){
+			document.write(this.fullName());
+		}
+	}
+
+	var person1 = new Person("John", "Doe");
+	var person2 = new Person("Leo", "Doe");
+
+	person1.showName();
+	document.write("<br>");
+	person2.showName();
+	</script>
+	
+</body>
+</html>
