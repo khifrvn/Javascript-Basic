@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript</title>
+</head>
+<body>
+	<p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+    <h2 id="judul2">Delete Saya!</h2>
+
+	<script type="text/javascript">
+	var paragraf = document.getElementsByClassName("paragraf");
+    setInterval(function () {
+        paragraf[0].style.color = "red";
+        paragraf[1].style.color = "green";
+        paragraf[2].style.color = "blue";
+
+        setTimeout(function () {
+            paragraf[0].style.color = "black";
+            paragraf[1].style.color = "black";
+            paragraf[2].style.color = "black";
+        }, 500)
+    }, 1000);
+
+    // membuat element h1
+    var judul = document.createElement("h1");
+        
+    // mengisi kontent elemen
+    judul.textContent = "Belajar Javascript";
+
+    // menambahkan elemen ke dalam tag body
+    document.body.append(judul);
+
+    // memilih elemen berdasarkan ID
+    var h2 = document.getElementById('judul2');
+
+    // menghapus elemen yang sudah dipilih
+    h2.remove();
+
+    console.log("Elemen sudah dihapus");
+    console.log(h2);
+	</script>
+	
+</body>
+</html>
