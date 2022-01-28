@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript</title>
+</head>
+<body>
+	<!-- IF ELSE (Condition) on Javascript -->
+	<script>
+	var spending = prompt("Enter ur Top Up: ");
+
+	if (spending > 100000) {
+		document.write("Congrats u got discount!")
+	} else {
+		document.write("Thank's for Coming!")
+	}
+
+	document.write("<br><br>");
+
+	var nilai = prompt("Inputkan nilai akhir:");
+  var grade = "";
+
+ 	if(nilai >= 90) grade = "A"
+  else if(nilai >= 80) grade = "B+"
+  else if(nilai >= 70) grade = "B"
+  else if(nilai >= 60) grade = "C+"
+  else if(nilai >= 50) grade = "C"
+  else grade = "F";
+  document.write(`<p>Grade anda: ${grade}</p>`);
+	</script>
+
+	<!-- Switch Case on Javascript -->
+	<script>
+
+	switch(true){
+		case nilai > 90:
+			grade = "A";
+			break;
+		case nilai > 80:
+			grade = "B";
+			break;
+		case nilai > 70:
+			grade = "C";
+			break;
+		case nilai > 50:
+			grade = "D";
+			break;
+		default:
+			grade = "F";
+	}
+
+
+	</script>
+	
+</body>
+</html>
