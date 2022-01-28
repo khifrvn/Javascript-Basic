@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript</title>
+</head>
+<body>
+	<!-- Array on Javascript -->
+	<script>
+	var fruit = ['Apel', 'Grape', 'Berry', 'Manggo'];
+	var john = [20, 'Tokyo', true, 2.0];
+
+	// how call array
+	document.write(fruit[2]);
+	var products = ["Senter", "Radio", "Antena", "Obeng"];
+
+    document.write("<h3>Daftar Produk:</h3>");
+    document.write("<ol>");
+    // menggunakan perulangan untuk mencetak semua isi array
+    for(let i = 0; i < products.length; i++){
+      document.write(`<li>${ products[i] }</li>`);
+    }
+    document.write("</ol>");
+
+  	for(let i=0; i < fruit.length; i++){
+  		document.write(`<li>${ fruit[i] }</li>`);
+  	}
+
+  // add new index to array use .push
+  fruit.push('Avocado');
+  document.write(fruit);
+  document.write("<br>")
+
+  // delete index in array
+  delete fruit[0];
+  document.write(fruit);
+
+
+	</script>
+	
+</body>
+</html>
