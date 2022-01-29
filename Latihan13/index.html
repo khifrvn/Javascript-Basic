@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM Javascript</title>
+</head>
+<body>
+	<h1>BOX OFFICE on February</h1>
+	<ul>
+		<li>
+			<a href="#">Black Mamba</a>
+		</li>
+		<li>
+			<a href="#">Score One</a>
+		</li>
+		<li>
+			<a href="#">Blue Screen</a>
+		</li>
+	</ul>
+
+	<h2>Hello Everyone</h2>
+	<button id="btn">Click Me!</button>
+	<script>
+	// DOM Example
+	
+	// query selector
+	let h1Element = document.querySelector("h1");
+	console.log(h1Element);
+
+	// query selector all
+	let listElement = document.querySelectorAll("ul > li");
+
+	listElement.forEach((item) => {
+		console.log(listElement);
+	});
+
+	// add new element
+	let unorderedList = document.createElement("ul");
+	document.body.appendChild(unorderedList);
+
+	let listItem1 = document.createElement("li");
+	listItem1.textContent = "John Doe";
+	unorderedList.appendChild(listItem1);
+
+	let listItem2 = document.createElement("li");
+	listItem2.textContent = "John Prik";
+	unorderedList.appendChild(listItem2);
+
+
+	// How change inline CSS
+	const h2Style = document.querySelector("h2");
+	h2Style.style.color = "yellow";
+
+	const btn1 = document.getElementById("btn");
+	btn1.addEventListener("click", () => {
+  alert("Thank you for clicking me");
+	});
+
+	</script>
+</body>
+</html>
